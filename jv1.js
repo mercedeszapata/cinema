@@ -19,5 +19,5 @@ if (comprar == "si") {
     }
 } 
 else {
-    alert("No te pierdas los estrenos de esta semana");
+    alert("No te pierdas los estrenos de esta semana.");
 }
