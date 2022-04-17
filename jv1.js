@@ -1,10 +1,27 @@
 alert("Bienvenido a Cinema");
 let comprar= prompt("¿Desea comprar entradas?");
+let cant= parseInt(prompt("¿Cuántas entradas desea comprar?"));
+let precio;
+
 if (comprar == "si") {
-    let cantidad= parseInt(prompt("¿Cuántas entradas desea comprar?"));
-    let precio= 250 * cantidad;
+    
+    precio=calcularPrecio(cant);
     alert("El valor de las entradas es $" + precio + ".");
-    let medioDePago= prompt("Proceder a pagar. Elegir efectivo o tarjeta");
+    pagar();
+    
+} 
+else {
+    alert("No te pierdas los estrenos de esta semana.");
+}
+
+
+function calcularPrecio(_cant){
+    _precio= 250 * _cant;
+    return _precio;
+    
+}
+function pagar(){
+    let medioDePago=prompt("Proceder a pagar. Elegir efectivo o tarjeta");
     while (medioDePago != "no") {
         switch (medioDePago) {
             case "efectivo":
@@ -17,7 +34,4 @@ if (comprar == "si") {
         }
         break;
     }
-} 
-else {
-    alert("No te pierdas los estrenos de esta semana.");
 }
