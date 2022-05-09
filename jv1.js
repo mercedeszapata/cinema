@@ -6,13 +6,17 @@ console.log(cambiarModo);
 let fondoBody= document.getElementById("body");
 console.log(fondoBody.className);
 let botonNovedades=document.getElementById("novedades");
+botonNovedades.onmouseover=()=>{
+    novedades.className= "colorBoton";
+    }
 botonNovedades.onclick=()=>{
     alert("Ya estas suscripto");
 }
+
     cambiarModo.addEventListener("click", ()=>{
         if(fondoBody.className=="claro"){
             fondoBody.className= "oscuro";
-            divCarterlera.className="oscuro"
+            divCarterlera.className="oscuro";
         }
         else{
             fondoBody.className="claro";
