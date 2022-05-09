@@ -1,0 +1,23 @@
+.oscuro {
+  background-color: black;
+  color: white; }
+  .oscuro h5 {
+    background-color: black;
+    color: white; }
+  .oscuro p {
+    background-color: black;
+    color: white; }
+  .oscuro .card-body {
+    background-color: black; }
+
+.claro {
+  background-color: white;
+  color: black; }
+  .claro h5 {
+    background-color: white;
+    color: black; }
+  .claro p {
+    background-color: white;
+    color: black; }
+  .claro .card-body {
+    background-color: white; }
