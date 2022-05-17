@@ -1,28 +1,25 @@
-alert("Bienvenido a Cinema");
+let cambiarModo = document.getElementById("cambiarModo");
+const hmtlCarrito = document.getElementById("listaCarrito");
 
-
-let cambiarModo= document.getElementById("cambiarModo");
-console.log(cambiarModo);
-let fondoBody= document.getElementById("body");
+let fondoBody = document.getElementById("body");
 console.log(fondoBody.className);
-let botonNovedades=document.getElementById("novedades");
-botonNovedades.onmouseover=()=>{
-    novedades.className= "colorBoton";
-    }
-botonNovedades.onclick=()=>{
+let botonNovedades = document.getElementById("novedades");
+botonNovedades.onmouseover = () => {
+    novedades.className = "colorBoton";
+}
+botonNovedades.onclick = () => {
     alert("Ya estas suscripto");
 }
 
-    cambiarModo.addEventListener("click", ()=>{
-        if(fondoBody.className=="claro"){
-            fondoBody.className= "oscuro";
-            divCarterlera.className="oscuro";
-        }
-        else{
-            fondoBody.className="claro";
-            divCarterlera.className="claro";
-        }
-    })
+cambiarModo.addEventListener("click", () => {
+    if (fondoBody.className == "claro") {
+        fondoBody.className = "oscuro";
+        divCarterlera.className = "oscuro";
+    } else {
+        fondoBody.className = "claro";
+        divCarterlera.className = "claro";
+    }
+})
 
 class Peliculas {
     constructor(nombrePelicula, edadPermitida, genero, id) {
@@ -32,18 +29,18 @@ class Peliculas {
         this.id = id;
     }
 }
-const pelicula1 = new Peliculas("Cásate conmigo", "ATP", "Romántica",1);
-const pelicula2 = new Peliculas("Duna", "ATP", "Fantástica",2);
-const pelicula3 = new Peliculas("Encanto", "ATP", "Infantil",3);
-const pelicula4 = new Peliculas("El exorcismo de Dios", "+13", "Terror",4);
-const pelicula5 = new Peliculas("Scream", "+13", "Terror",5);
-const pelicula6 = new Peliculas("Ecos de un crimen", "+13", "Suspenso",6);
+const pelicula1 = new Peliculas("Cásate conmigo", "ATP", "Romántica", 1);
+const pelicula2 = new Peliculas("Duna", "ATP", "Fantástica", 2);
+const pelicula3 = new Peliculas("Encanto", "ATP", "Infantil", 3);
+const pelicula4 = new Peliculas("El exorcismo de Dios", "+13", "Terror", 4);
+const pelicula5 = new Peliculas("Scream", "+13", "Terror", 5);
+const pelicula6 = new Peliculas("Ecos de un crimen", "+13", "Suspenso", 6);
 
 let cartelera = [pelicula1, pelicula2, pelicula3, pelicula4, pelicula5];
-let carrito=[];
+let carrito = [];
 let divCarterlera = document.getElementById("divCartelera");
 cartelera.forEach(peliculaEnCartelera => {
-        divCarterlera.innerHTML += `
+    divCarterlera.innerHTML += `
          <div class=" card peliculaEnCartelera" id="pelicula${peliculaEnCartelera.id}" style="width: 18rem;">
   
   <div class="card-body">
@@ -54,26 +51,16 @@ cartelera.forEach(peliculaEnCartelera => {
   </div>
 </div>
          `
-    
-
-    }
-)
 
 
-cartelera.forEach(peliculaEnCartelera=>{
-    document.getElementById(`boton${peliculaEnCartelera.id}`).addEventListener("click", ()=> {
-        
-    carrito.push(peliculaEnCartelera.nombreDePelicula)
-    localStorage.setItem("productosCarrito", JSON.stringify(carrito))
-    })
 })
 
-    
 
+cartelera.forEach(peliculaEnCartelera => {
+    document.getElementById(`boton${peliculaEnCartelera.id}`).addEventListener("click", () => {
 
-
-
-
-    
-
-
+        carrito.push(peliculaEnCartelera.nombreDePelicula);
+        localStorage.setItem("productosCarrito", JSON.stringify(carrito));
+        hmtlCarrito.innerHTML = carrito;
+    })
+})
