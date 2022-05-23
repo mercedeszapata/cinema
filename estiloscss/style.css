@@ -5,7 +5,10 @@
 
 .oscuro {
   background-color: black;
-  color: white; }
+  color: white;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto auto; }
   .oscuro h5 {
     background-color: black;
     color: white; }
@@ -15,9 +18,24 @@
   .oscuro .card-body {
     background-color: black; }
 
+.oscuro1 {
+  background-color: black;
+  color: white; }
+  .oscuro1 h5 {
+    background-color: black;
+    color: white; }
+  .oscuro1 p {
+    background-color: black;
+    color: white; }
+  .oscuro1 .card-body {
+    background-color: black; }
+
 .claro {
   background-color: white;
-  color: black; }
+  color: black;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto auto; }
   .claro h5 {
     background-color: white;
     color: black; }
@@ -25,6 +43,18 @@
     background-color: white;
     color: black; }
   .claro .card-body {
+    background-color: white; }
+
+.claro1 {
+  background-color: white;
+  color: black; }
+  .claro1 h5 {
+    background-color: white;
+    color: black; }
+  .claro1 p {
+    background-color: white;
+    color: black; }
+  .claro1 .card-body {
     background-color: white; }
 
 .colorBoton {

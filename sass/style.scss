@@ -8,6 +8,33 @@
 .oscuro {
     background-color: black;
     color: white;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto auto;
+    
+    
+
+    h5 {
+        background-color: black;
+        color: white;
+    }
+
+    p {
+        background-color: black;
+        color: white;
+    }
+
+    .card-body {
+        background-color: black;
+    }
+
+}
+.oscuro1 {
+    background-color: black;
+    color: white;
+    
+    
+    
 
     h5 {
         background-color: black;
@@ -28,6 +55,29 @@
 .claro {
     background-color: white;
     color: black;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto auto;
+
+    h5 {
+        background-color: white;
+        color: black;
+    }
+
+    p {
+        background-color: white;
+        color: black;
+    }
+
+    .card-body {
+        background-color: white;
+    }
+
+}
+.claro1 {
+    background-color: white;
+    color: black;
+   
 
     h5 {
         background-color: white;
@@ -53,6 +103,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: auto auto;
+    
 }
 
 
