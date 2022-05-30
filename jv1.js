@@ -40,6 +40,7 @@ const pelicula5 = new Peliculas("Scream", "+13", "Terror", 5);
 const pelicula6 = new Peliculas("Ecos de un crimen", "+13", "Suspenso", 6);
 //ARRAY CON TODAS LAS PELÍCULAS//
 let cartelera = [pelicula1, pelicula2, pelicula3, pelicula4, pelicula5];
+
 let carrito = [];
 //CARDS CON PELÍCULAS EN EL INDEX//
 let divCarterlera = document.getElementById("divCartelera");
