@@ -5,17 +5,14 @@ console.log(listaCarrito);
 
 let carrito = [listaCarrito];
 console.log(listaCarrito[0]);
+
 //CÁLCULO DEL PRECIO FINAL A PAGAR//
 let precio = 650;
 let dolar;
 let cantApagar = precio * listaCarrito[1];
 console.log(cantApagar);
 
-
-
-
 //VISTA DEL CARRITO DE COMPRAS//
-
 
 document.getElementById("divListaCarrito");
 
@@ -35,10 +32,6 @@ divListaCarrito.innerHTML += `
   </div>
   `
 
-
-
-
-
 setInterval(() => {
   fetch("https://criptoya.com/api/dolar")
     .then(response => response.json())
@@ -55,13 +48,12 @@ setInterval(() => {
 }, 300);
 
 
-
-
 //FUNCIÓN QUE MUESTRA MENSAJE DE COMPRA REALIZADA//
+
 function mensajeCompra() {
   Toastify({
 
-    text: "Compra realizada",
+    text: "Compra realizada.",
 
     duration: 3000
 

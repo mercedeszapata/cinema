@@ -1,92 +1,79 @@
-
 @import "_variables.scss";
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+
 .oscuro {
-    background-color: black;
-    color: white;
+    background-color: $colorTerciario;
+    color: $colorSecundario;
+    font-family: $fuentePrincipal;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: auto auto;
-    
-    
+
 
     h5 {
-        background-color: black;
-        color: white;
+        background-color: $colorTerciario;
+        color: $colorSecundario;
+        font-family: $fuentePrincipal;
     }
 
     p {
-        background-color: black;
-        color: white;
+        background-color: $colorTerciario;
+        color: $colorSecundario;
+        font-family: $fuentePrincipal;
     }
 
     .card-body {
-        background-color: black;
+        background-color: $colorTerciario;
     }
 
 }
+
 .oscuro1 {
-    background-color: black;
-    color: white;
-    
-    
-    
+    background-color: $colorTerciario;
+    color: $colorSecundario;
+    font-family: $fuentePrincipal;
+
+
 
     h5 {
-        background-color: black;
-        color: white;
+        background-color: $colorTerciario;
+        color: $colorSecundario;
+        font-family: $fuentePrincipal;
     }
 
     p {
-        background-color: black;
-        color: white;
+        background-color: $colorTerciario;
+        color: $colorSecundario;
+        font-family: $fuentePrincipal;
     }
 
     .card-body {
-        background-color: black;
+        background-color: $colorTerciario;
     }
 
 }
 
-.claro {
-    background-color: white;
-    color: black;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: auto auto;
-
-    h5 {
-        background-color: white;
-        color: black;
-    }
-
-    p {
-        background-color: white;
-        color: black;
-    }
-
-    .card-body {
-        background-color: white;
-    }
-
-}
 .claro1 {
     background-color: white;
-    color: black;
-   
+    color: $colorTerciario;
+    font-family: $fuentePrincipal;
+
 
     h5 {
         background-color: white;
-        color: black;
+        color: $colorTerciario;
+        font-family: $fuentePrincipal;
     }
 
     p {
         background-color: white;
-        color: black;
+        color: $colorTerciario;
+        font-family: $fuentePrincipal;
     }
 
     .card-body {
@@ -95,15 +82,18 @@
 
 }
 
-.colorBoton {
-    background-color: aquamarine;
+.divEstrenos {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
 }
 
-.divCarterlera{
+
+.divCarterlera {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: auto auto;
-    
+
 }
 
 
@@ -119,7 +109,3 @@ h2 {
     font-family: $fuentePrincipal;
     text-align: center;
 }
-
-
-
-
